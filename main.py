@@ -43,7 +43,7 @@ for row in results:
 
 #ЗАДАНИЕ2
   
-secont_task_query = """
+second_task_query = """
   SELECT
     b.title AS Название,
     p.publisher_name AS Издательство,
@@ -65,7 +65,7 @@ secont_task_query = """
   LIMIT 1;
 """
 
-cursor.execute(first_task_query)
+cursor.execute(second_task_query)
 results = cursor.fetchall()
 for row in results:
   print(row)
